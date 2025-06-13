@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar HeroIA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href=".//src/css/reset.css" />
+    <link rel="stylesheet" href=".//src/css/responsivo.css" />
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./src/imagens/logo.png" height="200px" width=" 500px" alt="Logo Guitar HeroIA">
+    </header>
+
+    <main class="container">
+        <h1 class="Guitarrista">Guitarrista</h1>
+
+        <div class="filtros">
+            <div class="categorias-cartas">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" class="categoria">
+                    <option value="">Selecione uma carta</option>
+                    <option value="versátil">Versátil</option>
+                    <option value="powermetal">PowerMetal</option>
+                    <option value="hardrock">HardRock</option>
+                </select>
+            </div>
+
+            <div class="preco-cartas">
+                <label for="preco">Preço máximo (R$)</label>
+                <input type="text" id="preco" class="preco" placeholder="Ex: 100">
+            </div>
+
+            <button class="btn-filtrar">Aplicar filtros</button>
+        </div>
+
+        <ul class="cartas">
+            <li class="carta" data-categoria="hardrock" data-preco="60000">
+                <img src="./src/imagens/slash.png" height="px" width="300px" alt="Slash">
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Slash</h2>
+                    <span class="categoria">Categoria: HardRock</span>
+                    <div class="preco-e-botao">
+                        <span class="preco">R$ 60.000,00</span>
+                        <a href="http://wa.me/5567981014866?text=Olá, quero comprar a carta Slash!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="hardrock" data-preco="40000">
+                <img src="src/imagens/tom morello.png" height="300px" width="300px" alt="Tom Morello" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Tom Morello</h2>
+                    <span class="categoria">Categoria: HardRock</span>
+                    <div class="preco-e-botao">
+                        <span class="preco">R$ 40.000,00</span>
+                        <a href="http://wa.me/5567981014866?text=Olá, quero comprar a carta Tom Morello!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="versátil" data-preco="42000">
+                <img src="src/imagens/john mayer.png" height="300px" width="300px" alt="John Mayer" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">John Mayer</h2>
+                    <span class="categoria">Categoria: Versátil</span>
+                    <div class="preco-e-botao">
+                        <span class="preco">R$ 42.000,00</span>
+                        <a href="http://wa.me/5567981014866?text=Olá, quero comprar a carta John Mayer!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="versátil" data-preco="84000">
+                <img src="src/imagens/mateus asato.png" height="300px" width="300px" alt="Mateus Asato" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Mateus Asato</h2>
+                    <span class="categoria">Categoria: Versátil</span>
+                    <div class="preco-e-botao">
+                        <span class="preco">R$ 84.000,00</span>
+                        <a href="http://wa.me/5567981014866?text=Olá, quero comprar a carta Mateus Asato!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="versátil" data-preco="98000">
+                <img src="src/imagens/joseph.png" height="300px" width="300px" alt="Joseph Nava" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Joseph Nava</h2>
+                    <span class="categoria">Categoria: Versátil</span>
+                    <div class="preco-e-botao">
+                        <span class="preco">R$ 98.000,00</span>
+                        <a href="http://wa.me/5567981014866?text=Olá, quero comprar a carta Joseph Nava!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="carta" data-categoria="PowerMetal" data-preco="98000">
+                <img src="src/imagens/kiko loureiro.png" height="300px" width="300px" alt="Kiko Loureiro" />
+                <div class="informacoes">
+                    <h2 class="nome-personagem">Kiko Loureiro</h2>
+                    <span class="categoria">Categoria: Power</span>
+                    <div class="preco-e-botao">
+                        <span class="preco">R$ 73.000,00</span>
+                        <a href="http://wa.me/5567981014866?text=Olá, quero comprar a carta Kiko Loureiro!" class="btn-comprar" target="_blank">Comprar</a>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </main>
+
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+    <script src="./src/js/index.js"></script>
+
+</body>
+</html>
